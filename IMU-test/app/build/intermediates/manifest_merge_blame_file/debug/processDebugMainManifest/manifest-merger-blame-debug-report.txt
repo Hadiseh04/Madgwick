@@ -1,0 +1,207 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.madgwicktest"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="33"
+8-->INJECTED
+9        android:targetSdkVersion="36" />
+9-->INJECTED
+10
+11    <permission
+11-->[androidx.core:core:1.13.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\431e5054b866c604ac65f94fc8f4d676\workspace\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.madgwicktest.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.13.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\431e5054b866c604ac65f94fc8f4d676\workspace\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.13.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\431e5054b866c604ac65f94fc8f4d676\workspace\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.madgwicktest.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.13.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\431e5054b866c604ac65f94fc8f4d676\workspace\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.13.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\431e5054b866c604ac65f94fc8f4d676\workspace\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:5:5-33:19
+18        android:allowBackup="true"
+18-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.13.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\431e5054b866c604ac65f94fc8f4d676\workspace\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+22-->INJECTED
+23        android:fullBackupContent="@xml/backup_rules"
+23-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:8:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:10:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:11:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:12:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.IMUTest" >
+29-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:13:9-45
+30        <activity
+30-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:14:9-25:20
+31            android:name="com.example.madgwicktest.MainActivity"
+31-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:15:13-41
+32            android:exported="true"
+32-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:16:13-36
+33            android:label="@string/app_name"
+33-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:17:13-45
+34            android:screenOrientation="portrait"
+34-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:18:13-49
+35            android:theme="@style/Theme.IMUTest" >
+35-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:19:13-49
+36            <intent-filter>
+36-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:20:13-24:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:21:17-69
+37-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:21:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:23:17-77
+39-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:23:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity
+42-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:26:9-32:52
+43            android:name="com.example.madgwicktest.GodotGameActivity"
+43-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:27:13-46
+44            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboard|keyboardHidden|uiMode|density"
+44-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:30:13-130
+45            android:exported="false"
+45-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:28:13-37
+46            android:process=":godot"
+46-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:29:13-37
+47            android:resizeableActivity="false"
+47-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:31:13-47
+48            android:theme="@style/Theme.IMUTest" />
+48-->C:\Users\hadis\AndroidStudioProjects\IMU-test\app\src\main\AndroidManifest.xml:32:13-49
+49        <!-- Records the version of the Godot library -->
+50        <meta-data
+50-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:12:9-14:44
+51            android:name="org.godotengine.library.version"
+51-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:13:13-59
+52            android:value="4.6.3.stable" />
+52-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:14:13-41
+53
+54        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+54-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:16:9-80
+54-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:16:18-77
+55
+56        <activity
+56-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:18:9-22:75
+57            android:name="org.godotengine.godot.utils.ProcessPhoenix"
+57-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:19:13-70
+58            android:exported="false"
+58-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:20:13-37
+59            android:process=":phoenix"
+59-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:21:13-39
+60            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+60-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:22:13-72
+61
+62        <provider
+62-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:24:9-32:20
+63            android:name="androidx.core.content.FileProvider"
+63-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:25:13-62
+64            android:authorities="com.example.madgwicktest.fileprovider"
+64-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:26:13-64
+65            android:exported="false"
+65-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:27:13-37
+66            android:grantUriPermissions="true" >
+66-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:28:13-47
+67            <meta-data
+67-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:29:13-31:64
+68                android:name="android.support.FILE_PROVIDER_PATHS"
+68-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:30:17-67
+69                android:resource="@xml/godot_provider_paths" />
+69-->[org.godotengine:godot:4.6.3.stable] C:\Users\hadis\.gradle\caches\9.3.1\transforms\89cbb7ef0c11a8994cf2e879b8e2c756\workspace\transformed\godot-4.6.3.stable\AndroidManifest.xml:31:17-61
+70        </provider>
+71
+72        <activity
+72-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\ec13302ee611ac3c219ad07bd9d9046d\workspace\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+73            android:name="androidx.compose.ui.tooling.PreviewActivity"
+73-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\ec13302ee611ac3c219ad07bd9d9046d\workspace\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+74            android:exported="true" />
+74-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\ec13302ee611ac3c219ad07bd9d9046d\workspace\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+75        <activity
+75-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\c54e943e21606a47df1e28938c6e178a\workspace\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:23:9-25:39
+76            android:name="androidx.activity.ComponentActivity"
+76-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\c54e943e21606a47df1e28938c6e178a\workspace\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:24:13-63
+77            android:exported="true" />
+77-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\c54e943e21606a47df1e28938c6e178a\workspace\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:25:13-36
+78
+79        <provider
+79-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\0eb467b62d3e53b50a30b328ddd79605\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+80            android:name="androidx.startup.InitializationProvider"
+80-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\0eb467b62d3e53b50a30b328ddd79605\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+81            android:authorities="com.example.madgwicktest.androidx-startup"
+81-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\0eb467b62d3e53b50a30b328ddd79605\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+82            android:exported="false" >
+82-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\0eb467b62d3e53b50a30b328ddd79605\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+83            <meta-data
+83-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\0eb467b62d3e53b50a30b328ddd79605\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+84                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+84-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\0eb467b62d3e53b50a30b328ddd79605\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+85                android:value="androidx.startup" />
+85-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hadis\.gradle\caches\9.3.1\transforms\0eb467b62d3e53b50a30b328ddd79605\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+86            <meta-data
+86-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\hadis\.gradle\caches\9.3.1\transforms\d2fadb240ec2d4e71423b960fb996cb5\workspace\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
+87                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+87-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\hadis\.gradle\caches\9.3.1\transforms\d2fadb240ec2d4e71423b960fb996cb5\workspace\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
+88                android:value="androidx.startup" />
+88-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\hadis\.gradle\caches\9.3.1\transforms\d2fadb240ec2d4e71423b960fb996cb5\workspace\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
+89            <meta-data
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+91                android:value="androidx.startup" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+92        </provider>
+93
+94        <receiver
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+95            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+96            android:directBootAware="false"
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+97            android:enabled="true"
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+98            android:exported="true"
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+99            android:permission="android.permission.DUMP" >
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+101                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+102            </intent-filter>
+103            <intent-filter>
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+104                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+105            </intent-filter>
+106            <intent-filter>
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+107                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+108            </intent-filter>
+109            <intent-filter>
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+110                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hadis\.gradle\caches\9.3.1\transforms\dc982ff9aadd7ca23d7082a775d753b6\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+111            </intent-filter>
+112        </receiver>
+113    </application>
+114
+115</manifest>

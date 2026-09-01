@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://by8rb266lxro"]
+
+[ext_resource type="Script" uid="uid://dpp54jqnoekep" path="res://target_cube.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://ckxhkpjxgm1ws" path="res://game_manager.gd" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://bnc4mtjkswrus" path="res://player_cube.gd" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://ba1gnhsaljj7a" path="res://IMUManager.gd" id="4_imu"]
+
+[sub_resource type="Environment" id="Environment_main"]
+background_mode = 1
+background_color = Color(0.4117647, 0.5058824, 0.6862745, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_target"]
+albedo_color = Color(0.364706, 1, 0.25098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ig7tw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_player"]
+albedo_color = Color(0.117647, 0.219608, 1, 1)
+
+[node name="Main" type="Node3D" unique_id=1827806366]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=255990713]
+environment = SubResource("Environment_main")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=822644293]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 0.25, 6)
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=303541517]
+transform = Transform3D(0.707107, -0.353553, 0.612372, 0, 0.866025, 0.5, -0.707107, -0.353553, 0.612372, 0, 2, 3)
+light_energy = 2.0
+
+[node name="TargetCube" type="MeshInstance3D" parent="." unique_id=33089712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+material_override = SubResource("StandardMaterial3D_target")
+mesh = SubResource("BoxMesh_ig7tw")
+script = ExtResource("1_ig7tw")
+
+[node name="PlayerCube" type="MeshInstance3D" parent="." unique_id=1662330502]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+material_override = SubResource("StandardMaterial3D_player")
+mesh = SubResource("BoxMesh_ig7tw")
+script = ExtResource("2_h2yge")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1748696073]
+
+[node name="TopBar" type="PanelContainer" parent="UI" unique_id=52152415]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 35.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/TopBar" unique_id=2025622739]
+layout_mode = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 60
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/TopBar/MarginContainer" unique_id=1785025126]
+layout_mode = 2
+alignment = 1
+
+[node name="Left" type="VBoxContainer" parent="UI/TopBar/MarginContainer/HBoxContainer" unique_id=1182414270]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScoreLabel" type="Label" parent="UI/TopBar/MarginContainer/HBoxContainer/Left" unique_id=545677555]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+
+[node name="Center" type="VBoxContainer" parent="UI/TopBar/MarginContainer/HBoxContainer" unique_id=1780881209]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="StatusLabel" type="Label" parent="UI/TopBar/MarginContainer/HBoxContainer/Center" unique_id=685295945]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+
+[node name="Right" type="VBoxContainer" parent="UI/TopBar/MarginContainer/HBoxContainer" unique_id=1954833955]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TimeLabel" type="Label" parent="UI/TopBar/MarginContainer/HBoxContainer/Right" unique_id=1686593681]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 2
+
+[node name="GameManager" type="Node" parent="." unique_id=677203977]
+script = ExtResource("2_0xm2m")
+
+[node name="IMUManager" type="Node" parent="." unique_id=1290854067]
+script = ExtResource("4_imu")
